@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le titre de la page -->
+    <title>cours html</title>
+    <!-- petite icone de l'onglet -->
+    <link rel="shortcut icon" href="logo html 5.png" />
+  </head>
+  <body>
+    <header>
+      <h1><span>&#9758;</span> Texte - Titre - H1</h1>
+      <p>Un petit texte basique pour debuter</p>
+      <em>un texte en italique</em> <strong>un texte en gras</strong>
+      <span>même chose que le p mais ne revient pas à la ligne</span>
+      <p>
+        Lorem ipsum dolor sit amet,
+        <strong>Mettre du gras dans un texte</strong> consectetur adipisicing
+        elit. A nam earum quam itaque
+        <em>donc je peux aussi mettre de l'italique</em> esse natus corporis
+        iste dolor, totam eaque
+        <span>pour ne pas revenir à la ligne</span>labore expedita doloribus
+        illum saepe obcaecati voluptatibus officia harum laborum!
+      </p>
+      <span>
+        Ce texte se trouve dans le span Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Ea voluptate repellendus ex ipsum quibusdam minima,
+        mollitia dolor quisquam nihil qui cupiditate dolores aspernatur impedit
+        exercitationem veniam. Asperiores obcaecati autem vero.
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ullam,
+          suscipit quas ratione doloribus minima, architecto nulla cupiditate
+          distinctio minus numquam? Dolore amet ea officiis delectus distinctio
+          natus veritatis sequi!
+        </p>
+        ne revient pas à la ligne</span
+      >
+    </header>
+
+    <section>
+      <div>
+        <h2>Photo - Titre - H2</h2>
+        <img
+          src="Couverture_Bamako.jpg"
+          height="500"
+          alt="message qui s'affiche quand la photo n'est pas disponible"
+        />
+      </div>
+      <div>
+        <h3>Listes - Titre - H3</h3>
+        <!-- pour faire une liste non ordonnée. ul pour unordered list-->
+        <ul>
+          <li>Apprendre le language html</li>
+          <li>2e de la liste</li>
+          <li>UL= Unordered List</li>
+        </ul>
+        <!-- pour faire une liste ordonnée. ol pour ordered list -->
+        <ol>
+          <li>Apprendre le language html</li>
+          <li>Cette fois ci c'est une liste ordonnée</li>
+          <li>OL = Ordered List</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux - Titre - H4</h4>
+        <table border="1" width="50%">
+          <!-- legende -->
+          <caption>
+            Populations de certains pays
+          </caption>
+          <!-- En-tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>70 Millions</td>
+            </tr>
+            <tr>
+              <td>Mali</td>
+              <td>20 Millions</td>
+            </tr>
+            <tr>
+              <td>Russie</td>
+              <td>140 Millions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><span>&#8466;</span> Liens - Titre - H5</h5>
+        <!-- pour le lien on fait un anchor -->
+        <a href="https://www.htmlcheatsheet.com/">HTML Cheat Sheet</a>
+        <br />
+        <!-- pour ouvrir le lien sur une nouvelle fenêtre -->
+        <a href="https://www.htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+        >
+          Lien pour avoir les codes des Icones en HTML</a
+        >
+      </div>
+      <div>
+        <h6>Vidéos - Titre - H6</h6>
+        <!-- On va mettre une video, qui se automatiquement (autoplay) qui se joue en boucle (loop), (muted) pour couper le son -->
+        <video src="video.mp4" height="150" autoplay loop muted></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulaire -->
+    <section>
+        <h2> Formulaire </h2>
+        <form action="/action.php" method="post">
+            <!-- on peut créer un formualire uniquement avec le (input) mais on met un (label) pour que quand on clique sur le Nom on va directement dans le formulaire à remplir -->
+            <label for="name"> Nom :</label><input id="name" type="text" placeholder="Entrez votre nom svp">
+            <br>
+            <label for="âge"> Age :</label> <input id="âge" type="number" min="18" max="70" step="1" value="18" >
+            <br>
+            <!-- inpt de type select;  (selected) pour choisr la valeur par defaut-->
+            <label for="gender"> Genre </label> 
+            <select id="gender" >
+                <option value="Homme"> Homme </option>
+                <option selected value="Femme"> Femme </option>
+            </select>
+            <!-- Input de type radio; 
+                on met le (name) partout pour relier les choix sinon on pourra faire plusieurs choix;
+            (checked) pour un choix par défaut-->
+            <div>
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="Car">
+                <label for="Car">Voiture</label>
+
+                <input type="radio" name="type" checked id="house">
+                <label for="house">Maison</label>
+            </div>
+            <!-- On peut mettre une zone de texte -->
+            <textarea cols="30" rows="10" placeholder="Ici vous pouvez mentionnez vos remarques"></textarea>
+            <br>
+            <!-- Input checkbox; on peut enroler les checkbox dans les labels -->
+            <label> <input type="checkbox" > Accepter ls CGU </label>
+            <label> <input type="checkbox" > Autoriser le prelevement </label>
+            <label> <input type="checkbox" > Atoriser les cookies </label>
+            <br>
+            <!-- Pour valider les choix ou envoyer le formulaire; quand on clique sur valider on créee une action vers le fichier php mentionnez au debut du formulaire (form) -->
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br>
+    <!-- mail & envoi de fichier -->
+    <footer>
+        <a href="mailto:addresse du destinataire@....com"> Ecrivez-moi !</a>
+        <br>
+        <a href="notice.txt" download="Nom du fichier à télécarger">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
